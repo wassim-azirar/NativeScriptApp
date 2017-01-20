@@ -8,10 +8,10 @@
   },
   "keywords": [
     "NativeScript",
-	"Angular",
-	"TypeScript",
-	"Android",
-	"iOS"
+    "Angular",
+    "TypeScript",
+    "Android",
+    "iOS"
   ],
   "author": "Wassim AZIRAR <wassim.azirar@gmail.com> (https://linkedin.com/in/wassimazirar)",
   "license": "Apache License, Version 2.0",
@@ -19,6 +19,15 @@
     "url": "https://github.com/wassim-azirar/NativeScriptApp/issues"
   },
   "homepage": "https://github.com/wassim-azirar/NativeScriptApp",
+  "nativescript": {
+    "id": "org.azirar.nativeScriptApp",
+    "tns-ios": {
+      "version": "2.4.0"
+    },
+    "tns-android": {
+      "version": "2.4.1"
+    }
+  },
   "scripts": {
     "tslint": "tslint \"app/**/*.ts\""
   },
