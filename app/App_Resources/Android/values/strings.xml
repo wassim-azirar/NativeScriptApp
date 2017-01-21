@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">nativeScriptApp</string>
-    <string name="title_activity_kimera">nativeScriptApp</string>
+    <string name="app_name">NativeScript app</string>
+    <string name="title_activity_kimera">{N} app</string>
 </resources>
