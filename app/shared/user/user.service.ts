@@ -12,7 +12,7 @@ export class UserService {
   constructor(private http: Http) {}
 
   register(user: User) {
-    let headers = new Headers();
+    const headers = new Headers();
     headers.append("Content-Type", "application/json");
 
     return this.http.post(
@@ -26,9 +26,9 @@ export class UserService {
     )
     .catch(this.handleErrors);
   }
-  
+
 	login(user: User) {
-	let headers = new Headers();
+	const headers = new Headers();
 	headers.append("Content-Type", "application/json");
 
 	return this.http.post(
