@@ -49,9 +49,11 @@
     "babel-traverse": "6.8.0",
     "babel-types": "6.8.1",
     "babylon": "6.8.0",
+    "browserify": "13.3.0",
     "filewalker": "0.1.2",
     "jasmine-core": "^2.5.2",
     "karma": "^1.4.0",
+    "karma-browserify": "5.1.0",
     "karma-jasmine": "^1.1.0",
     "karma-junit-reporter": "1.2.0",
     "karma-nativescript-launcher": "^0.4.0",
@@ -59,6 +61,7 @@
     "nativescript-dev-typescript": "^0.3.2",
     "tslint": "4.3.1",
     "typescript": "^2.0.10",
+    "watchify": "3.8.0",
     "zone.js": "~0.7.2"
   }
 }
