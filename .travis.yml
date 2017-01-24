@@ -18,10 +18,15 @@ before_cache:
     - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 
 cache:
+    yarn: true
     directories:
+        - node_modules
         - .nvm
         - $HOME/.gradle/caches/
         - $HOME/.gradle/wrapper/
+
+before_install:
+  - npm install -g yarn --cache-min 999999999
 
 install:
     - nvm install $NODE_VERSION
@@ -29,7 +34,7 @@ install:
     - npm install -g nativescript.tgz --ignore-scripts
     - tns usage-reporting disable
     - tns error-reporting disable
-    - npm install
+    - yarn #- npm install
 
 # before_script:
 #     - echo no | android create avd --force -n test -t android-19 -b armeabi-v7a
@@ -39,4 +44,4 @@ install:
 script:
     - npm run tslint
     - tns build android
-    - tns test android --emulator --justlaunch
+    #- tns test android --emulator --justlaunch
