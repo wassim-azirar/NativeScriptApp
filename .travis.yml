@@ -35,7 +35,7 @@ install:
     - npm install -g nativescript.tgz --ignore-scripts
     - tns usage-reporting disable
     - tns error-reporting disable
-    #- yarn install #- npm install
+    - yarn install #- npm install
 
 #before_script:
 #     - echo no | android create avd --force -n test -t android-19 -b armeabi-v7a
