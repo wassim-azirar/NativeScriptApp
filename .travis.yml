@@ -25,6 +25,9 @@ cache:
         - $HOME/.gradle/caches/
         - $HOME/.gradle/wrapper/
 
+before_install:
+    - npm install -g yarn
+
 install:
     - nvm install $NODE_VERSION
     - wget -O ./nativescript.tgz "https://s3.amazonaws.com/nativescript-ci/build_result/nativescript.tgz"
@@ -32,7 +35,7 @@ install:
     - npm install -g nativescript.tgz --ignore-scripts
     - tns usage-reporting disable
     - tns error-reporting disable
-    - yarn install #- npm install
+    #- yarn install #- npm install
 
 #before_script:
 #     - echo no | android create avd --force -n test -t android-19 -b armeabi-v7a
