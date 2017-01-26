@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/wassim-azirar/NativeScriptApp.png?label=ready&title=Ready)](https://waffle.io/wassim-azirar/NativeScriptApp)
 # NativeScriptApp
 
 This repo contains a sample app using NativeScript, TypeScript & Angular 2
